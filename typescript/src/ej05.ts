@@ -11,8 +11,7 @@ export function todosLosRoles(users: UserWithRoles[]): string[] {
 // Como el anterior pero sin duplicados.
 export function rolesUnicos(users: UserWithRoles[]): string[] {
   return [...new Set(
-    users
-      .flatMap(u => u.roles)
+    users.flatMap(u => u.roles)
   )];
 }
 
